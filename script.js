@@ -60,35 +60,6 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
-/* Tenary operator in use to refactor the following code below. Line 48 shows this. */
-//   // if the guess value is high, the below code will be outputted
-// } else if (guessValue > secretValue) {
-//   // score is 1 because the message seclector shows the message at score 1 when the score condition is set to 0.
-//   // Score is set to 1 to allow the message to be executed at score 0
-//   if (score > 1) {
-//     selectorMessage.textContent = 'Too high!';
-//     score--;
-//     console.log(score);
-//     document.querySelector('.score').textContent = score;
-//   } else {
-//     selectorMessage.textContent = '❌You lost the game!';
-//     document.querySelector('.score').textContent = 0;
-//   }
-//   // if the guess value is high the following will be outputted
-// } else if (guessValue < secretValue) {
-//   if (score > 1) {
-//     selectorMessage.textContent = 'Too Low';
-//     score--;
-//     console.log(score);
-//     document.querySelector('.score').textContent = score;
-//   } else {
-//     selectorMessage.textContent = '❌You lost the game!';
-//     document.querySelector('.score').textContent = 0;
-//     document.body.style.backgroundColor = '#ff0000';
-//   }
-// }
-// });
-
 // again btn listener
 const resetNumField = document.querySelector('.guess');
 document.querySelector('.again').addEventListener('click', function () {
