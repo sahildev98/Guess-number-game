@@ -25,6 +25,8 @@ let highScore = 0;
 const selectorMessage = document.querySelector('.message');
 const selectorScore = document.querySelector('.score');
 const selectorNumber = document.querySelector('.number');
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
 
 // any input into javascript is by default a string. Implementing parseInt or Number will make it into a number.
 document.querySelector('.check').addEventListener('click', function () {
@@ -40,7 +42,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.body.style.backgroundColor = '#00ff00';
     selectorNumber.style.width = '30rem';
     // Show modal box when answer is correct
-    
+
     if (score > highScore) {
       highScore = score;
       document.querySelector('.highscore').textContent = score;
