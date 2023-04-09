@@ -25,8 +25,6 @@ let highScore = 0;
 const selectorMessage = document.querySelector('.message');
 const selectorScore = document.querySelector('.score');
 const selectorNumber = document.querySelector('.number');
-const modal = document.querySelector('.modal');
-const 
 
 // any input into javascript is by default a string. Implementing parseInt or Number will make it into a number.
 document.querySelector('.check').addEventListener('click', function () {
