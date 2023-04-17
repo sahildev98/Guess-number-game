@@ -43,6 +43,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // Show modal box when answer is correct
     modal.classList.remove('hidden');
     modal.style.backgroundColor = '#00ff00';
+    overlay.classList.remove('hidden');
     if (score > highScore) {
       highScore = score;
       document.querySelector('.highscore').textContent = score;
