@@ -39,7 +39,6 @@ document.querySelector('.check').addEventListener('click', function () {
     score++;
     selectorScore.textContent = score;
     selectorNumber.textContent = secretValue;
-    document.body.style.backgroundColor = '#00ff00';
     selectorNumber.style.width = '30rem';
     // Show modal box when answer is correct
     modal.classList.remove('hidden');
