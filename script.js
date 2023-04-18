@@ -25,6 +25,7 @@ let highScore = 0;
 const selectorMessage = document.querySelector('.message');
 const selectorScore = document.querySelector('.score');
 const selectorNumber = document.querySelector('.number');
+const resetGuessValue = document.querySelector('.guess');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 
@@ -66,7 +67,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 // again btn listener
-const resetNumField = document.querySelector('.guess');
+
 document.querySelector('.again').addEventListener('click', function () {
   // reset guess, message and score
   score = 20;
