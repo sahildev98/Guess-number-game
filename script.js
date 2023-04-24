@@ -68,13 +68,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 // again btn listener
-<<<<<<< HEAD
-const resetNumField = document.querySelector('.guess');
 function resetGame() {
-=======
-
-document.querySelector('.again').addEventListener('click', function () {
->>>>>>> 33c6ac651a7bd0d9f67c2178b228dc74b101982a
   // reset guess, message and score
   score = 20;
   secretValue = Math.trunc(Math.random() * 20 + 1);
