@@ -45,6 +45,7 @@ document.querySelector('.check').addEventListener('click', function () {
     modal.classList.remove('hidden');
     modal.style.backgroundColor = '#00ff00';
     overlay.classList.remove('hidden');
+    resetGame();
     if (score > highScore) {
       highScore = score;
       document.querySelector('.highscore').textContent = score;
@@ -67,8 +68,13 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 // again btn listener
+<<<<<<< HEAD
+const resetNumField = document.querySelector('.guess');
+function resetGame() {
+=======
 
 document.querySelector('.again').addEventListener('click', function () {
+>>>>>>> 33c6ac651a7bd0d9f67c2178b228dc74b101982a
   // reset guess, message and score
   score = 20;
   secretValue = Math.trunc(Math.random() * 20 + 1);
@@ -78,4 +84,9 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').textContent = '?';
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
-});
+  console.log('Button pressed');
+}
+document.querySelector('.again').addEventListener('click', resetGame);
+// Array.from(document.querySelectorAll('.again')).forEach(btn =>
+//   btn.addEventListener('click', resetGame)
+// );
