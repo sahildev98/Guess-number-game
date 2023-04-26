@@ -74,7 +74,7 @@ function resetGame() {
   secretValue = Math.trunc(Math.random() * 20 + 1);
   document.querySelector('.score').innerHTML = 20;
   selectorMessage.textContent = 'Start Guessing...';
-  resetNumField.value = '';
+  resetGuessValue.value = '';
   document.querySelector('.number').textContent = '?';
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
