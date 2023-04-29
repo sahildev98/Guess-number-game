@@ -66,7 +66,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
-
+const btn = document.querySelector('.again');
 // again btn listener
 function resetGame() {
   // reset guess, message and score
@@ -80,7 +80,5 @@ function resetGame() {
   document.querySelector('.number').style.width = '15rem';
   console.log('Button pressed');
 }
-document.querySelector('.again').addEventListener('click', resetGame);
-// Array.from(document.querySelectorAll('.again')).forEach(btn =>
-//   btn.addEventListener('click', resetGame)
-// );
+
+btn.onclick = resetGame();
