@@ -14,7 +14,7 @@
 
 // secret value is value that is being set as the correct answer.
 // Math trunc rounds values to a whole number.
-let secretValue = Math.trunc(Math.random() * 20 + 1);
+let secretValue = generateSecret();
 
 // score value
 let score = 20;
