@@ -71,7 +71,7 @@ const btn = document.querySelector('.again');
 function resetGame() {
   // reset guess, message and score
   score = 20;
-  secretValue = Math.trunc(Math.random() * 20 + 1);
+
   document.querySelector('.score').innerHTML = 20;
   selectorMessage.textContent = 'Start Guessing...';
   resetGuessValue.value = '';
@@ -93,4 +93,8 @@ function showModal(visible = true) {
   }
 }
 
-function generateSecretNum() {}
+function generateSecretNum() {
+  const secretNum = Math.trunc(Math.random() * 20 + 1);
+  console.log('secret number is', secret);
+  return secretNum;
+}
