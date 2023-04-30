@@ -84,6 +84,11 @@ function resetGame() {
 btn.onclick = resetGame();
 
 function showModal(visible = true) {
-  overlay.classList.add('hidden');
-  modal.classList.add('hidden');
+  if (visible) {
+    overlay.classList.remove('hidden');
+    modal.classList.remove('hidden');
+  } else {
+    overlay.classList.add('hidden');
+    modal.classList.add('hidden');
+  }
 }
