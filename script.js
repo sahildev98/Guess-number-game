@@ -82,3 +82,5 @@ function resetGame() {
 }
 
 btn.onclick = resetGame();
+
+function closeModal() {}
