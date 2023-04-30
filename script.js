@@ -92,3 +92,5 @@ function showModal(visible = true) {
     modal.classList.add('hidden');
   }
 }
+
+function generateSecretNum() {}
