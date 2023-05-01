@@ -25,13 +25,13 @@ let highScore = 0;
 const selectorMessage = document.querySelector('.message');
 const selectorScore = document.querySelector('.score');
 const selectorNumber = document.querySelector('.number');
-const resetGuessValue = document.querySelector('.guess');
+const selectorGuess = document.querySelector('.guess');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 
 // any input into javascript is by default a string. Implementing parseInt or Number will make it into a number.
 document.querySelector('.check').addEventListener('click', function () {
-  const guessValue = Number(document.querySelector('.guess').value);
+  const guessValue = Number(selectorGuess.value);
   // if value field is empty the scenario will be outputted
   if (guessValue == '') {
     selectorMessage.textContent = '🔢 Please enter a number ';
@@ -70,7 +70,7 @@ function resetGame() {
   score = 20;
   document.querySelector('.score').innerHTML = 20;
   selectorMessage.textContent = 'Start Guessing...';
-  resetGuessValue.value = '';
+  selectorGuess.value = '';
   document.querySelector('.number').textContent = '?';
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
