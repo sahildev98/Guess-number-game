@@ -45,7 +45,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // modal.classList.remove('hidden');
     // modal.style.backgroundColor = '#00ff00';
     // overlay.classList.remove('hidden');
-    // showModal(false);
+    showModal(true);
     // resetGame();
     if (score > highScore) {
       highScore = score;
@@ -75,14 +75,15 @@ function resetGame() {
   document.querySelector('.score').innerHTML = 20;
   selectorMessage.textContent = 'Start Guessing...';
   resetGuessValue.value = '';
-  // document.querySelector('.number').textContent = '?';
-  // document.querySelector('body').style.backgroundColor = '#222';
-  // document.querySelector('.number').style.width = '15rem';
+  document.querySelector('.number').textContent = '?';
+  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('.number').style.width = '15rem';
   showModal(false);
   console.log('Button pressed');
 }
 
 btn.onclick = resetGame();
+btn.addEventListener('click', resetGame);
 
 function showModal(visible = true) {
   if (visible) {
