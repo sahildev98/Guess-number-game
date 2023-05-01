@@ -43,7 +43,6 @@ document.querySelector('.check').addEventListener('click', function () {
     selectorNumber.style.width = '30rem';
     // Show modal box when answer is correct
     showModal(true);
-    // resetGame();
     if (score > highScore) {
       highScore = score;
       document.querySelector('.highscore').textContent = score;
