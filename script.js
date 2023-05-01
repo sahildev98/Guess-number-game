@@ -14,7 +14,7 @@
 
 // secret value is value that is being set as the correct answer.
 // Math trunc rounds values to a whole number.
-let secretValue = generateSecret();
+let secretValue = generateSecretNum();
 
 // score value
 let score = 20;
@@ -42,10 +42,11 @@ document.querySelector('.check').addEventListener('click', function () {
     selectorNumber.textContent = secretValue;
     selectorNumber.style.width = '30rem';
     // Show modal box when answer is correct
-    modal.classList.remove('hidden');
-    modal.style.backgroundColor = '#00ff00';
-    overlay.classList.remove('hidden');
-    resetGame();
+    // modal.classList.remove('hidden');
+    // modal.style.backgroundColor = '#00ff00';
+    // overlay.classList.remove('hidden');
+    // showModal(false);
+    // resetGame();
     if (score > highScore) {
       highScore = score;
       document.querySelector('.highscore').textContent = score;
@@ -71,13 +72,13 @@ const btn = document.querySelector('.again');
 function resetGame() {
   // reset guess, message and score
   score = 20;
-
   document.querySelector('.score').innerHTML = 20;
   selectorMessage.textContent = 'Start Guessing...';
   resetGuessValue.value = '';
-  document.querySelector('.number').textContent = '?';
-  document.querySelector('body').style.backgroundColor = '#222';
-  document.querySelector('.number').style.width = '15rem';
+  // document.querySelector('.number').textContent = '?';
+  // document.querySelector('body').style.backgroundColor = '#222';
+  // document.querySelector('.number').style.width = '15rem';
+  showModal(false);
   console.log('Button pressed');
 }
 
@@ -95,6 +96,6 @@ function showModal(visible = true) {
 
 function generateSecretNum() {
   const secretNum = Math.trunc(Math.random() * 20 + 1);
-  console.log('secret number is', secret);
+  console.log('secret number is', secretNum);
   return secretNum;
 }
