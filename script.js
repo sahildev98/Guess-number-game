@@ -61,6 +61,9 @@ document.querySelector('.check').addEventListener('click', function () {
     } else {
       selectorMessage.textContent = '❌You lost the game!, START AGAIN!';
       selectorScore.textContent = 0;
+      modal.style.backgroundColor = '#ff0000';
+      modalMessage.textContent = '❌You lost the game!, START AGAIN!';
+      showModal(true);
     }
   }
 });
