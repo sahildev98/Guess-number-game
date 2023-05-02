@@ -88,6 +88,7 @@ function showModal(visible = true) {
   } else {
     overlay.classList.add('hidden');
     modal.classList.add('hidden');
+    modal.body.style.backgroundColor = '#ff0000';
   }
 }
 
