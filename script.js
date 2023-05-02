@@ -28,7 +28,7 @@ const selectorNumber = document.querySelector('.number');
 const selectorGuess = document.querySelector('.guess');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
-const resetbtn = document.querySelector('.again');
+const resetBtn = document.querySelector('.again');
 
 // any input into javascript is by default a string. Implementing parseInt or Number will make it into a number.
 document.querySelector('.check').addEventListener('click', function () {
@@ -78,8 +78,8 @@ function resetGame() {
   console.log('Button pressed');
 }
 
-resetbtn.onclick = resetGame();
-resetbtn.addEventListener('click', resetGame);
+resetBtn.onclick = resetGame();
+resetBtn.addEventListener('click', resetGame);
 
 function showModal(visible = true) {
   if (visible) {
