@@ -1,3 +1,3 @@
 Guess number game that consists the numbers of 1 and 20. 
 
-UPDATE: Creating a modal page for correct and wrong answer. 
+UPDATE: Modals are completed. Only issue is the emoji not showing when answer is incorrect. Something to work on once my JS skills have advanced. 
