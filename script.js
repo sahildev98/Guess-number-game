@@ -29,6 +29,7 @@ const selectorGuess = document.querySelector('.guess');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const resetBtn = document.querySelector('.again');
+const modalMessage = document.querySelector('.correct-message');
 
 // any input into javascript is by default a string. Implementing parseInt or Number will make it into a number.
 document.querySelector('.check').addEventListener('click', function () {
